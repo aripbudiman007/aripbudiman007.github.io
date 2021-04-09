@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Percakapan</title>
+        <link rel="stylesheet" href="./style.css" type="text/css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Percakapan Aku dan Dia</h1>
+            <div id="left">
+                <h2>Aku</h2>
+                <div class="box" id="chat-a">
+                </div>
+                <div class="form">
+                    <input type="hidden" id="id-person-a" value="Aku"/>
+                    <input type="text" id="person-a" placeholder="Type message here ..." data-emoji-picker="true"/>
+                </div>
+            </div>
+            <div id="right">
+                <h2>Dia</h2>
+                <div class="box" id="chat-b">
+                </div>
+                <div class="form">
+                    <input type="hidden" id="id-person-b" value="Dia"/>
+                    <input type="text" id="person-b" placeholder="Type message here ..." data-emoji-picker="true" />
+                </div>
+            </div>
+        </div>
+        <script src="./script.js"></script>
+        <script src="src/emojiPicker.js"></script>
+        <script>
+            (() => {
+              new EmojiPicker()
+            })()
+        </script>
+    </body>
+</html>
